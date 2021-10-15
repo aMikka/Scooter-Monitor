@@ -1,0 +1,6 @@
+framework module Pods_Scooter_Monitor {
+  umbrella header "Pods-Scooter Monitor-umbrella.h"
+
+  export *
+  module * { export * }
+}

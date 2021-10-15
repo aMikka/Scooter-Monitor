@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3322DFC834DADEF55B8DCF0F /* Pods_Scooter_Monitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12890D8849B095F2C7B44411 /* Pods_Scooter_Monitor.framework */; };
+		4734FC9F271793A700035747 /* MapViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4734FC9E271793A700035747 /* MapViewModelSpec.swift */; };
+		4734FCA227179B5300035747 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 4734FCA127179B5300035747 /* Nimble */; };
+		4734FCA527179B7700035747 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 4734FCA427179B7700035747 /* Quick */; };
+		47626093271367640033E29B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47626092271367640033E29B /* AppDelegate.swift */; };
+		47626097271367640033E29B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47626096271367640033E29B /* MapViewController.swift */; };
+		4762609F271367680033E29B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4762609D271367680033E29B /* LaunchScreen.storyboard */; };
+		4768D60A2718ADFD00AF441E /* MapDataNetworkingStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4768D6092718ADFD00AF441E /* MapDataNetworkingStub.swift */; };
+		4768D60B2718CAB500AF441E /* mapMockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 47DAF2602714C9A100881F35 /* mapMockData.json */; };
+		4768D60C2718CB9F00AF441E /* mapMockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 47DAF2602714C9A100881F35 /* mapMockData.json */; };
+		47B091222716535E00EF0CED /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47B091202716535E00EF0CED /* MapViewController.xib */; };
+		47B0912427165DEA00EF0CED /* VehicleDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47B0912327165DE900EF0CED /* VehicleDetailView.xib */; };
+		47B0912627165DF400EF0CED /* VehicleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B0912527165DF400EF0CED /* VehicleDetailView.swift */; };
+		47B52EB82715074000C40B34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4762609B271367680033E29B /* Assets.xcassets */; };
+		47B52EB92715074100C40B34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4762609B271367680033E29B /* Assets.xcassets */; };
+		47DAF2552714C80A00881F35 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DAF2542714C80A00881F35 /* Vehicle.swift */; };
+		47DAF2582714C85300881F35 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DAF2572714C85300881F35 /* UIColorExtensions.swift */; };
+		47DAF25B2714C89600881F35 /* CycleAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DAF25A2714C89600881F35 /* CycleAnnotationView.swift */; };
+		47DAF25D2714C8D500881F35 /* ClusterAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DAF25C2714C8D500881F35 /* ClusterAnnotationView.swift */; };
+		47DAF25F2714C90800881F35 /* MapData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DAF25E2714C90800881F35 /* MapData.swift */; };
+		47DAF2652714D7B100881F35 /* MapDataNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DAF2642714D7B100881F35 /* MapDataNetworking.swift */; };
+		47DAF2672714D86800881F35 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DAF2662714D86800881F35 /* NetworkError.swift */; };
+		47DAF26B2714DA4300881F35 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DAF26A2714DA4200881F35 /* HTTPRequest.swift */; };
+		47DAF26D2714DE2500881F35 /* HeadersKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DAF26C2714DE2500881F35 /* HeadersKeys.swift */; };
+		47DAF26F2714E03E00881F35 /* StatusCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DAF26E2714E03E00881F35 /* StatusCodes.swift */; };
+		47DAF2712714FA4E00881F35 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DAF2702714FA4D00881F35 /* MapViewModel.swift */; };
+		587E619AF7A47E8D6C059B3A /* Pods_Scooter_MonitorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BD74A52A46F8B26886D393 /* Pods_Scooter_MonitorTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		476260A6271367690033E29B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47626087271367640033E29B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4762608E271367640033E29B;
+			remoteInfo = "Scooter Monitor";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FC4606857F8A68FA2FF3882 /* Pods-Scooter MonitorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scooter MonitorTests.debug.xcconfig"; path = "Target Support Files/Pods-Scooter MonitorTests/Pods-Scooter MonitorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		12890D8849B095F2C7B44411 /* Pods_Scooter_Monitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scooter_Monitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DB968717D9E3CCDFB25ABBB /* Pods-Scooter Monitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scooter Monitor.debug.xcconfig"; path = "Target Support Files/Pods-Scooter Monitor/Pods-Scooter Monitor.debug.xcconfig"; sourceTree = "<group>"; };
+		4734FC9E271793A700035747 /* MapViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModelSpec.swift; sourceTree = "<group>"; };
+		4762608F271367640033E29B /* Scooter Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scooter Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47626092271367640033E29B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		47626096271367640033E29B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		4762609B271367680033E29B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4762609E271367680033E29B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		476260A0271367680033E29B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		476260A5271367690033E29B /* Scooter MonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scooter MonitorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4768D6092718ADFD00AF441E /* MapDataNetworkingStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataNetworkingStub.swift; sourceTree = "<group>"; };
+		47B091202716535E00EF0CED /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		47B0912327165DE900EF0CED /* VehicleDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleDetailView.xib; sourceTree = "<group>"; };
+		47B0912527165DF400EF0CED /* VehicleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailView.swift; sourceTree = "<group>"; };
+		47DAF2542714C80A00881F35 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		47DAF2572714C85300881F35 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		47DAF25A2714C89600881F35 /* CycleAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleAnnotationView.swift; sourceTree = "<group>"; };
+		47DAF25C2714C8D500881F35 /* ClusterAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClusterAnnotationView.swift; sourceTree = "<group>"; };
+		47DAF25E2714C90800881F35 /* MapData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapData.swift; sourceTree = "<group>"; };
+		47DAF2602714C9A100881F35 /* mapMockData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mapMockData.json; sourceTree = "<group>"; };
+		47DAF2642714D7B100881F35 /* MapDataNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataNetworking.swift; sourceTree = "<group>"; };
+		47DAF2662714D86800881F35 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		47DAF26A2714DA4200881F35 /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		47DAF26C2714DE2500881F35 /* HeadersKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadersKeys.swift; sourceTree = "<group>"; };
+		47DAF26E2714E03E00881F35 /* StatusCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCodes.swift; sourceTree = "<group>"; };
+		47DAF2702714FA4D00881F35 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		6C88FBCA395B28FA8DA4C6A0 /* Pods-Scooter Monitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scooter Monitor.release.xcconfig"; path = "Target Support Files/Pods-Scooter Monitor/Pods-Scooter Monitor.release.xcconfig"; sourceTree = "<group>"; };
+		8566C5061CA92EBC086E0F4C /* Pods-Scooter MonitorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scooter MonitorTests.release.xcconfig"; path = "Target Support Files/Pods-Scooter MonitorTests/Pods-Scooter MonitorTests.release.xcconfig"; sourceTree = "<group>"; };
+		E8BD74A52A46F8B26886D393 /* Pods_Scooter_MonitorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scooter_MonitorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4762608C271367640033E29B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3322DFC834DADEF55B8DCF0F /* Pods_Scooter_Monitor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476260A2271367690033E29B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4734FCA527179B7700035747 /* Quick in Frameworks */,
+				587E619AF7A47E8D6C059B3A /* Pods_Scooter_MonitorTests.framework in Frameworks */,
+				4734FCA227179B5300035747 /* Nimble in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47626086271367640033E29B = {
+			isa = PBXGroup;
+			children = (
+				47626091271367640033E29B /* Scooter Monitor */,
+				476260A8271367690033E29B /* Scooter MonitorTests */,
+				47626090271367640033E29B /* Products */,
+				87076FEA011A4162EFE97A2E /* Pods */,
+				A4526217076C5C98CBF34DBA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		47626090271367640033E29B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4762608F271367640033E29B /* Scooter Monitor.app */,
+				476260A5271367690033E29B /* Scooter MonitorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47626091271367640033E29B /* Scooter Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				47DAF2632714D79900881F35 /* Networking */,
+				47DAF2622714D63600881F35 /* ViewModel */,
+				47DAF2592714C87B00881F35 /* View */,
+				47DAF2562714C82F00881F35 /* Extensions */,
+				47DAF2532714C7EC00881F35 /* Model */,
+				47626092271367640033E29B /* AppDelegate.swift */,
+				4762609B271367680033E29B /* Assets.xcassets */,
+				4762609D271367680033E29B /* LaunchScreen.storyboard */,
+				476260A0271367680033E29B /* Info.plist */,
+			);
+			path = "Scooter Monitor";
+			sourceTree = "<group>";
+		};
+		476260A8271367690033E29B /* Scooter MonitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				4768D6082718ADE200AF441E /* NetworkingStubs */,
+				4734FC9E271793A700035747 /* MapViewModelSpec.swift */,
+			);
+			path = "Scooter MonitorTests";
+			sourceTree = "<group>";
+		};
+		4768D6082718ADE200AF441E /* NetworkingStubs */ = {
+			isa = PBXGroup;
+			children = (
+				4768D6092718ADFD00AF441E /* MapDataNetworkingStub.swift */,
+			);
+			path = NetworkingStubs;
+			sourceTree = "<group>";
+		};
+		47DAF2532714C7EC00881F35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47DAF2542714C80A00881F35 /* Vehicle.swift */,
+				47DAF25E2714C90800881F35 /* MapData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		47DAF2562714C82F00881F35 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				47DAF2572714C85300881F35 /* UIColorExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		47DAF2592714C87B00881F35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				47DAF25C2714C8D500881F35 /* ClusterAnnotationView.swift */,
+				47DAF25A2714C89600881F35 /* CycleAnnotationView.swift */,
+				47626096271367640033E29B /* MapViewController.swift */,
+				47B091202716535E00EF0CED /* MapViewController.xib */,
+				47B0912527165DF400EF0CED /* VehicleDetailView.swift */,
+				47B0912327165DE900EF0CED /* VehicleDetailView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		47DAF2622714D63600881F35 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				47DAF2702714FA4D00881F35 /* MapViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		47DAF2632714D79900881F35 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				47DAF2642714D7B100881F35 /* MapDataNetworking.swift */,
+				47DAF2662714D86800881F35 /* NetworkError.swift */,
+				47DAF26A2714DA4200881F35 /* HTTPRequest.swift */,
+				47DAF26C2714DE2500881F35 /* HeadersKeys.swift */,
+				47DAF2602714C9A100881F35 /* mapMockData.json */,
+				47DAF26E2714E03E00881F35 /* StatusCodes.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		87076FEA011A4162EFE97A2E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2DB968717D9E3CCDFB25ABBB /* Pods-Scooter Monitor.debug.xcconfig */,
+				6C88FBCA395B28FA8DA4C6A0 /* Pods-Scooter Monitor.release.xcconfig */,
+				0FC4606857F8A68FA2FF3882 /* Pods-Scooter MonitorTests.debug.xcconfig */,
+				8566C5061CA92EBC086E0F4C /* Pods-Scooter MonitorTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A4526217076C5C98CBF34DBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12890D8849B095F2C7B44411 /* Pods_Scooter_Monitor.framework */,
+				E8BD74A52A46F8B26886D393 /* Pods_Scooter_MonitorTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4762608E271367640033E29B /* Scooter Monitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 476260B9271367690033E29B /* Build configuration list for PBXNativeTarget "Scooter Monitor" */;
+			buildPhases = (
+				7E313D64D1C3BA80843A985F /* [CP] Check Pods Manifest.lock */,
+				475AA3D627176A0F000850D7 /* SwiftLint */,
+				4762608B271367640033E29B /* Sources */,
+				4762608C271367640033E29B /* Frameworks */,
+				4762608D271367640033E29B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Scooter Monitor";
+			productName = "Scooter Monitor";
+			productReference = 4762608F271367640033E29B /* Scooter Monitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		476260A4271367690033E29B /* Scooter MonitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 476260BC271367690033E29B /* Build configuration list for PBXNativeTarget "Scooter MonitorTests" */;
+			buildPhases = (
+				8E567BC54D61B4715BC6D404 /* [CP] Check Pods Manifest.lock */,
+				476260A1271367690033E29B /* Sources */,
+				476260A2271367690033E29B /* Frameworks */,
+				476260A3271367690033E29B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				476260A7271367690033E29B /* PBXTargetDependency */,
+			);
+			name = "Scooter MonitorTests";
+			packageProductDependencies = (
+				4734FCA127179B5300035747 /* Nimble */,
+				4734FCA427179B7700035747 /* Quick */,
+			);
+			productName = "Scooter MonitorTests";
+			productReference = 476260A5271367690033E29B /* Scooter MonitorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47626087271367640033E29B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					4762608E271367640033E29B = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					476260A4271367690033E29B = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 4762608E271367640033E29B;
+					};
+				};
+			};
+			buildConfigurationList = 4762608A271367640033E29B /* Build configuration list for PBXProject "Scooter Monitor" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47626086271367640033E29B;
+			packageReferences = (
+				4734FCA027179B5300035747 /* XCRemoteSwiftPackageReference "Nimble" */,
+				4734FCA327179B7700035747 /* XCRemoteSwiftPackageReference "Quick" */,
+			);
+			productRefGroup = 47626090271367640033E29B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4762608E271367640033E29B /* Scooter Monitor */,
+				476260A4271367690033E29B /* Scooter MonitorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4762608D271367640033E29B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4762609F271367680033E29B /* LaunchScreen.storyboard in Resources */,
+				4768D60C2718CB9F00AF441E /* mapMockData.json in Resources */,
+				47B52EB92715074100C40B34 /* Assets.xcassets in Resources */,
+				47B0912427165DEA00EF0CED /* VehicleDetailView.xib in Resources */,
+				47B091222716535E00EF0CED /* MapViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476260A3271367690033E29B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4768D60B2718CAB500AF441E /* mapMockData.json in Resources */,
+				47B52EB82715074000C40B34 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		475AA3D627176A0F000850D7 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		7E313D64D1C3BA80843A985F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Scooter Monitor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E567BC54D61B4715BC6D404 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Scooter MonitorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4762608B271367640033E29B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47DAF26D2714DE2500881F35 /* HeadersKeys.swift in Sources */,
+				47DAF25F2714C90800881F35 /* MapData.swift in Sources */,
+				47626097271367640033E29B /* MapViewController.swift in Sources */,
+				47626093271367640033E29B /* AppDelegate.swift in Sources */,
+				47DAF25B2714C89600881F35 /* CycleAnnotationView.swift in Sources */,
+				47DAF2552714C80A00881F35 /* Vehicle.swift in Sources */,
+				47B0912627165DF400EF0CED /* VehicleDetailView.swift in Sources */,
+				47DAF2652714D7B100881F35 /* MapDataNetworking.swift in Sources */,
+				47DAF26F2714E03E00881F35 /* StatusCodes.swift in Sources */,
+				47DAF25D2714C8D500881F35 /* ClusterAnnotationView.swift in Sources */,
+				47DAF2712714FA4E00881F35 /* MapViewModel.swift in Sources */,
+				47DAF26B2714DA4300881F35 /* HTTPRequest.swift in Sources */,
+				47DAF2582714C85300881F35 /* UIColorExtensions.swift in Sources */,
+				47DAF2672714D86800881F35 /* NetworkError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476260A1271367690033E29B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4768D60A2718ADFD00AF441E /* MapDataNetworkingStub.swift in Sources */,
+				4734FC9F271793A700035747 /* MapViewModelSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		476260A7271367690033E29B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4762608E271367640033E29B /* Scooter Monitor */;
+			targetProxy = 476260A6271367690033E29B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4762609D271367680033E29B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4762609E271367680033E29B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		476260B7271367690033E29B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		476260B8271367690033E29B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		476260BA271367690033E29B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DB968717D9E3CCDFB25ABBB /* Pods-Scooter Monitor.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KC6JW2LNCW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Scooter Monitor/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Needs your location to show nearby scooters";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hu.am.scootermonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Scooter Monitor Dev Profile2";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		476260BB271367690033E29B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C88FBCA395B28FA8DA4C6A0 /* Pods-Scooter Monitor.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KC6JW2LNCW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Scooter Monitor/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Needs your location to show nearby scooters";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hu.am.scootermonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Scooter Monitor Dev Profile2";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		476260BD271367690033E29B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FC4606857F8A68FA2FF3882 /* Pods-Scooter MonitorTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KC6JW2LNCW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.am.hu.Scooter-MonitorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scooter Monitor.app/Scooter Monitor";
+			};
+			name = Debug;
+		};
+		476260BE271367690033E29B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8566C5061CA92EBC086E0F4C /* Pods-Scooter MonitorTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KC6JW2LNCW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.am.hu.Scooter-MonitorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scooter Monitor.app/Scooter Monitor";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4762608A271367640033E29B /* Build configuration list for PBXProject "Scooter Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				476260B7271367690033E29B /* Debug */,
+				476260B8271367690033E29B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		476260B9271367690033E29B /* Build configuration list for PBXNativeTarget "Scooter Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				476260BA271367690033E29B /* Debug */,
+				476260BB271367690033E29B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		476260BC271367690033E29B /* Build configuration list for PBXNativeTarget "Scooter MonitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				476260BD271367690033E29B /* Debug */,
+				476260BE271367690033E29B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4734FCA027179B5300035747 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		4734FCA327179B7700035747 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4734FCA127179B5300035747 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4734FCA027179B5300035747 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		4734FCA427179B7700035747 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4734FCA327179B7700035747 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 47626087271367640033E29B /* Project object */;
+}
